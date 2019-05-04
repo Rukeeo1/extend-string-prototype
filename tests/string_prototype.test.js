@@ -1,3 +1,7 @@
 const String = require('../string_prototype');
 
-console.log(String);
+describe('hasVowels', function(){
+    it('should return true if the string contains a vowel', function(){
+        expect('hello'.hasVowels).toBe(true);
+    })
+})
