@@ -52,7 +52,7 @@ describe("ucFirst", function() {
 //isQuestion
 describe("isQuestion", function() {
   it("should return true if the string ends with a question", function() {
-    expect("rukee".isQuestion()).toBe(true);
+    expect("Would you be going out today?".isQuestion()).toBe(true);
   });
 
   it("should return 'boolean' as type ", function() {

@@ -18,4 +18,9 @@ String.prototype.ucFirst = function() {
   return this.charAt(0).toUpperCase() + this.substring(1);
 };
 
+String.prototype.isQuestion = function() {
+  let regex = /[\w]+\?$/;
+  return regex.test(this);
+};
+
 module.exports = String.prototype;
