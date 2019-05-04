@@ -9,4 +9,5 @@ String.prototype.toUpper = function() {
   return toUpperCasing(this)
 };
 
+
 module.exports = String.prototype;
