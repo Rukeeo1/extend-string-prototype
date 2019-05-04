@@ -17,6 +17,6 @@ describe("hasVowels", function() {
 
 describe("toUpper", function() {
   it("should return the string converted to upper case", function() {
-    expect("this string should be returned as uppercase".toUpperCase()).toBe("THIS STRING SHOULD BE RETURNED AS UPPERCASE");
+    expect("this string should be returned as uppercase".toUpper()).toBe("THIS STRING SHOULD BE RETURNED AS UPPERCASE");
   });
 });
