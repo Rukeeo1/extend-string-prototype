@@ -31,7 +31,7 @@ describe("toLower", function() {
   it("should return the string converted to lower case", function() {
     expect(
       "HELLO, CAN YOU HELP ME CONVERT THIS GUY TO LOWER CASE".toLower()
-    ).toBe("THIS STRING SHOULD BE RETURNED AS UPPERCASE");
+    ).toBe("hello, can you help me convert this guy to lower case");
   });
 
   it("should return 'string' as type ", function() {

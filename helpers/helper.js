@@ -11,6 +11,21 @@ function toUpperCasing(str) {
   return newStr;
 }
 
+/**The toLower method uses this function to convert a string to lowercase */
+function strToLowerCase(str) {
+  let newStr = "";
+  for (let i = 0; i < str.length; i++) {
+    let code = str.charCodeAt(i); //converts each characters to unicode equivalent
+    /*check if character is uppercase*/
+    if (code >= 65 && code <= 90) {
+      code += 32;
+    }
+    newStr += String.fromCharCode(code);
+  }
+  return newStr;
+}
+
 module.exports = {
-  toUpperCasing
+  toUpperCasing,
+  strToLowerCase
 };
