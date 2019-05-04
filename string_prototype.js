@@ -14,7 +14,8 @@ String.prototype.toLower = function() {
   return strToLowerCase(this);
 };
 
-String.prototype.ucFirst = function(){
-    
-}
+String.prototype.ucFirst = function() {
+  return this.charAt(0).toUpperCase() + this.substring(1);
+};
+
 module.exports = String.prototype;

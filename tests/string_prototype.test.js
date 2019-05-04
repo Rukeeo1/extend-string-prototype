@@ -40,14 +40,11 @@ describe("toLower", function() {
 });
 
 describe("ucFirst", function() {
-    it("should convert the first letter of the string to uppercase", function() {
-      expect(
-        "rukee".ucFirst()
-      ).toBe("Rukee");
-    });
-  
-    it("should return 'string' as type ", function() {
-      expect(typeof "hello world".ucFirst()).toBe("string");
-    });
+  it("should convert the first letter of the string to uppercase", function() {
+    expect("rukee".ucFirst()).toBe("Rukee");
   });
-  
+
+  it("should return 'string' as type ", function() {
+    expect(typeof "hello world".ucFirst()).toBe("string");
+  });
+});
