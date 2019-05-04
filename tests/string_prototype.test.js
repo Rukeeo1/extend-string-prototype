@@ -48,3 +48,14 @@ describe("ucFirst", function() {
     expect(typeof "hello world".ucFirst()).toBe("string");
   });
 });
+
+//isQuestion
+describe("isQuestion", function() {
+  it("should return true if the string ends with a question", function() {
+    expect("rukee".isQuestion()).toBe(true);
+  });
+
+  it("should return 'boolean' as type ", function() {
+    expect(typeof "hello world?".isQuestion()).toBe("boolean");
+  });
+});
