@@ -1,4 +1,5 @@
 const { toUpperCasing, strToLowerCase } = require("./helpers/helper");
+
 String.prototype.hasVowels = function() {
   let regex = /[aeiou]/gi;
   return regex.test(this);
@@ -12,4 +13,8 @@ String.prototype.toUpper = function() {
 String.prototype.toLower = function() {
   return strToLowerCase(this);
 };
+
+String.prototype.ucFirst = function(){
+    
+}
 module.exports = String.prototype;
