@@ -67,10 +67,28 @@ describe("isQuestion", function() {
 //words:
 describe("words", function() {
   it("should return the list of words in the string", function() {
-    expect("Would you be going out today?".words()).toEqual(["Would", "you", "be", "going", "out", "today"]);
+    expect("Would you be going out today?".words()).toEqual([
+      "Would",
+      "you",
+      "be",
+      "going",
+      "out",
+      "today"
+    ]);
   });
 
   it("should return 'object' as type ", function() {
     expect(typeof "hello world?".words()).toBe("object");
+  });
+});
+
+//wordCount
+describe("wordCount", function() {
+  it("should return the number of words in string", function() {
+    expect("Would you be going out today?".wordCount()).toEqual(6);
+  });
+
+  it("should return 'number' as type ", function() {
+    expect(typeof "hello world?".wordCount()).toBe("object");
   });
 });
