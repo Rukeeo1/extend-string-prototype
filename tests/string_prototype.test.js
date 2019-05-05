@@ -96,10 +96,22 @@ describe("wordCount", function() {
 //fromCurrency
 describe("fromCurrency", function() {
   it("should return a number from the currency without the comma", function() {
-    expect("11,111.11".fromCurrency()).toEqual( 11111.11);
+    expect("11,111.11".fromCurrency()).toEqual(11111.11);
   });
 
   it("should return 'number' as type ", function() {
+    console.log("hello world?.".fromCurrency());
     expect(typeof "hello world?".fromCurrency()).toBe("number");
+  });
+});
+
+//inverseCase
+describe("inverseCase", function() {
+  it("should return the string with the case of each character extracted", function() {
+    expect("Mr. Ben".inverseCase()).toEqual("mR. bEN");
+  });
+
+  it("should return 'string' as type ", function() {
+    expect(typeof "some name".fromCurrency()).toBe("string");
   });
 });

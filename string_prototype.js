@@ -40,4 +40,5 @@ String.prototype.fromCurrency = function() {
   //converts from string to Number;
   return Number(currencyWithoutCommas);
 };
+
 module.exports = String.prototype;
