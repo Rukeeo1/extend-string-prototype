@@ -39,7 +39,6 @@ String.prototype.wordCount = function() {
 };
 
 //toCurrency ....... implementation comming soon.
-
 String.prototype.fromCurrency = function() {
   let regex = /,/g; //store the comma ',' pattern in a regexp
 
@@ -59,10 +58,14 @@ String.prototype.alternatingCase = function() {
   return alternateCasing(this);
 };
 
-console.log("------------------------");
 
 String.prototype.numberWords = function(number) {
   return convertNumbersToWords(number);
 };
+
+/**I wasn't sure of the exact way in which The instructor wanted the function to be implemented, so i added another implementation.*/
+String.prototype.stringNumbersToWords = function(){
+  
+}
 
 module.exports = String.prototype;

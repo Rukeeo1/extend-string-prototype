@@ -153,3 +153,18 @@ describe("numberWords", function() {
     expect(typeof String.numberWords(7998)).toBe("string");
   });
 });
+
+//stringNumbersToWords
+describe("stringNumbersToWords ", function() {
+  it("should return the given number in words", function() {
+    expect("3244".stringNumbersToWords()).toEqual("Three Two Four Four");
+  });
+
+  it("should return the given number in words", function() {
+    expect("325".stringNumbersToWords()).toBe("Three Two Five");
+  });
+
+  it("should return 'string' as type ", function() {
+    expect(typeof "325".stringNumbersToWords()).toBe("string");
+  });
+});
