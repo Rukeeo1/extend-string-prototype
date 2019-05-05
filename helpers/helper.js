@@ -53,9 +53,39 @@ function alternateCasing(str) {
   }
   return newStr;
 }
+
+/**The following handles the number to words functions --- which has different implementations */
+
+let wordsArray = [
+  "Zero",
+  "One",
+  "Two",
+  "Three",
+  "Four",
+  "Five",
+  "Six",
+  "Seven",
+  "Eight",
+  "Nine"
+];
+
+function convertNumbersToWords(number) {
+  let numberToString = String(number);
+  let newString = "";
+  let regex = /\s/;
+
+  for (var i = 0; i < numberToString.length; i++) {
+    //convert the numberTostring member at that index to a number
+    newString += " " + wordsArray[numberToString[i]];
+  }
+
+  return newString.replace(regex, "");
+}
+
 module.exports = {
   toUpperCasing,
   strToLowerCase,
   invertCasing,
-  alternateCasing
+  alternateCasing,
+  convertNumbersToWords
 };

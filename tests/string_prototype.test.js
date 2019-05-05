@@ -142,14 +142,14 @@ describe("alternatingCase", function() {
 //numberWords (typeof String):
 describe("numberWords", function() {
   it("should return the given number in words", function() {
-    expect(String.prototype.numberWords(3244)).toEqual("Three Two Four Four");
+    expect(String.numberWords(3244)).toEqual("Three Two Four Four");
   });
 
   it("should return the given number in words", function() {
-    expect(String.prototype.numberWords(325)).toBe("Three Two Five");
+    expect(String.numberWords(325)).toBe("Three Two Five");
   });
 
   it("should return 'string' as type ", function() {
-    expect(typeof String.prototype.numberWords(7998)).toBe("string");
+    expect(typeof String.numberWords(7998)).toBe("string");
   });
 });

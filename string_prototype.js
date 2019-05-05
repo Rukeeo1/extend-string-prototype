@@ -2,7 +2,8 @@ const {
   toUpperCasing,
   strToLowerCase,
   invertCasing,
-  alternateCasing
+  alternateCasing,
+  convertNumbersToWords
 } = require("./helpers/helper");
 
 String.prototype.hasVowels = function() {
@@ -56,6 +57,12 @@ String.prototype.inverseCase = function() {
 String.prototype.alternatingCase = function() {
   /**check helper.js for implementation details */
   return alternateCasing(this);
+};
+
+console.log("------------------------");
+
+String.prototype.numberWords = function(number) {
+  return convertNumbersToWords(number);
 };
 
 module.exports = String.prototype;
