@@ -92,3 +92,14 @@ describe("wordCount", function() {
     expect(typeof "hello world?".wordCount()).toBe("number");
   });
 });
+
+//fromCurrency
+describe("fromCurrency", function() {
+  it("should return a number from the currency without the comma", function() {
+    expect("11,111.11".fromCurrency()).toEqual( 11111.11);
+  });
+
+  it("should return 'number' as type ", function() {
+    expect(typeof "hello world?".fromCurrency()).toBe("number");
+  });
+});
