@@ -55,7 +55,23 @@ describe("isQuestion", function() {
     expect("Would you be going out today?".isQuestion()).toBe(true);
   });
 
+  it("should return false if the string doesn't ends with a question", function() {
+    expect("this is a string without a question".isQuestion()).toBe(false);
+  });
+
   it("should return 'boolean' as type ", function() {
     expect(typeof "hello world?".isQuestion()).toBe("boolean");
+  });
+});
+
+//words:
+describe("words", function() {
+  it("should return the list of words in the string", function() {
+    expect("Would you be going out today?".words()).toBe();
+  });
+
+
+  it("should return 'objedt' as type ", function() {
+    expect(typeof "hello world?".words()).toBe("object");
   });
 });
