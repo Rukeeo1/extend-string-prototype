@@ -25,7 +25,23 @@ function strToLowerCase(str) {
   return newStr;
 }
 
+//invertCasing function used by invertCase method on string prototytpe
+function invertCasing(str) {
+  let newStr = "";
+  let regex = /[A-Z]/;
+
+  for (var i = 0; i < str.length; i++) {
+    if (regex.test(str[i])) {
+      newStr += str[i].toLower();
+    } else {
+      newStr += str[i].toUpper();
+    }
+  }
+  return newStr;
+}
+
 module.exports = {
   toUpperCasing,
-  strToLowerCase
+  strToLowerCase,
+  invertCasing
 };

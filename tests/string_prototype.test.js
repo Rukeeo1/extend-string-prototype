@@ -107,11 +107,15 @@ describe("fromCurrency", function() {
 
 //inverseCase
 describe("inverseCase", function() {
-  it("should return the string with the case of each character extracted", function() {
+  it("should return the string with the case of each character inverted", function() {
     expect("Mr. Ben".inverseCase()).toEqual("mR. bEN");
   });
 
+  it("should return the string with the case of each character inverted", function(){
+    expect("rukee IS SOUL smashingly HANDsome!!!!".inverseCase()).toBe("RUKEE is soul SMASHINGLY handSOME!!!!")
+  })
+
   it("should return 'string' as type ", function() {
-    expect(typeof "some name".fromCurrency()).toBe("string");
+    expect(typeof "some name".inverseCase()).toBe("string");
   });
 });
