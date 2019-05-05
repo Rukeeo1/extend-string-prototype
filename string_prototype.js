@@ -31,4 +31,13 @@ String.prototype.words = function() {
 String.prototype.wordCount = function() {
   return this.words().length;
 };
+
+String.prototype.fromCurrency = function() {
+  let regex = /,/g; //store the comma ',' pattern in a regexp
+
+  let currencyWithoutCommas = this.replace(regex, "");
+
+  //converts from string to Number;
+  return Number(currencyWithoutCommas);
+};
 module.exports = String.prototype;
