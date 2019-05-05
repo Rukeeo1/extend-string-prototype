@@ -168,3 +168,22 @@ describe("stringNumbersToWords ", function() {
     expect(typeof "325".stringNumbersToWords()).toBe("string");
   });
 });
+
+//isDigit (typeof Boolean)
+//Returns true if the string is a digit(one number) e.g 3 should return true and 34 should return false. This method must implement Regular Expression.
+
+describe("isDigit", function() {
+  it("should return true if the number is a single digit", function() {
+    expect("3".isDigit()).toEqual(true);
+  });
+
+  it("should return false if the given number is more than one digit", function() {
+    expect("325".isDigit()).toBe(false);
+  });
+
+  it("should return 'string' as type ", function() {
+    expect(
+      typeof "should return false if words are passed in".stringNumbersToWords()
+    ).toBe(false);
+  });
+});

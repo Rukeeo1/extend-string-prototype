@@ -68,4 +68,6 @@ String.prototype.stringNumbersToWords = function() {
   return strNumToWord(this);
 };
 
+//isDigit (typeof Boolean)
+
 module.exports = String.prototype;
