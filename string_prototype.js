@@ -1,7 +1,8 @@
 const {
   toUpperCasing,
   strToLowerCase,
-  invertCasing
+  invertCasing,
+  alternateCasing
 } = require("./helpers/helper");
 
 String.prototype.hasVowels = function() {
@@ -52,6 +53,10 @@ String.prototype.inverseCase = function() {
   return invertCasing(this);
 };
 
+String.prototype.alternatingCase = function(){
+
+  return alternateCasing(this);
+}
 
 
 

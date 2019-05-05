@@ -125,11 +125,11 @@ describe("inverseCase", function() {
 //alternatingCase
 describe("alternatingCase", function() {
   it("should alternate the casing of the string", function() {
-    expect("Mr. Ben".alternatingCase()).toEqual("mR. bEN");
+    expect("Mr. Ben".alternatingCase()).toEqual("mR. bEn");
   });
 
   it("should alternate the casing of the string", function() {
-    expect("rukee IS SOUL smashingly HANDsome!!!!".alternatingCase()).toBe();
+    expect("rukee IS SOUL smashingly HANDsome!!!!".alternatingCase()).toBe( "rUkEe iS SoUl sMaShInGlY HaNdSoMe!!!!");
   });
 
   it("should return 'string' as type ", function() {

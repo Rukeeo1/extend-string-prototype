@@ -40,8 +40,22 @@ function invertCasing(str) {
   return newStr;
 }
 
+//alternateCasing helps the alternate case method...
+function alternateCasing(str) {
+  let newStr = "";
+  let strToLowerCase = str.toLower();
+  for (var i = 0; i < strToLowerCase.length; i++) {
+    if (i % 2 !== 0) {
+      newStr += strToLowerCase[i].toUpper();
+    } else {
+      newStr += strToLowerCase[i];
+    }
+  }
+  return newStr;
+}
 module.exports = {
   toUpperCasing,
   strToLowerCase,
-  invertCasing
+  invertCasing,
+  alternateCasing
 };
