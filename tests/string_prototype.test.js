@@ -93,6 +93,21 @@ describe("wordCount", function() {
   });
 });
 
+//toCurrency
+describe("toCurrency", function() {
+  it("should return the number formatted as a currency", function() {
+    expect(String.toCurrency(11111.11)).toEqual();
+  });
+
+  it("should return the number formatted as a currency", function() {
+    expect(String.toCurrency(1000)).toEqual();
+  });
+
+  it("should return 'number' as type ", function() {
+    expect(typeof String.toCurrency(11111.11)).toBe("string");
+  });
+});
+//************** */
 //fromCurrency
 describe("fromCurrency", function() {
   it("should return a number from the currency without the comma", function() {
@@ -170,8 +185,6 @@ describe("stringNumbersToWords ", function() {
 });
 
 //isDigit (typeof Boolean)
-//Returns true if the string is a digit(one number) e.g 3 should return true and 34 should return false. This method must implement Regular Expression.
-
 describe("isDigit", function() {
   it("should return true if the number is a single digit", function() {
     expect("3".isDigit()).toEqual(true);
@@ -185,7 +198,7 @@ describe("isDigit", function() {
     expect("should return false if words are passed in".isDigit()).toBe(false);
   });
 
-  it("should return 'boolean' as it's type", function(){
-    expect(typeof '3'.isDigit()).toBe('boolean')
-  })
+  it("should return 'boolean' as it's type", function() {
+    expect(typeof "3".isDigit()).toBe("boolean");
+  });
 });

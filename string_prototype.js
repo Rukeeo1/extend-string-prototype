@@ -75,4 +75,5 @@ String.prototype.isDigit = function() {
   return regex.test(this);
 };
 
+
 module.exports = String.prototype;
