@@ -75,8 +75,8 @@ String.prototype.isDigit = function() {
   return regex.test(this);
 };
 
-String.prototype.toCurrency = function(number){
-  return (number).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
-}
+String.prototype.toCurrency = function(number) {
+  return number.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,");
+};
 
 module.exports = String.prototype;
