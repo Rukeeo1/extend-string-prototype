@@ -111,11 +111,28 @@ describe("inverseCase", function() {
     expect("Mr. Ben".inverseCase()).toEqual("mR. bEN");
   });
 
-  it("should return the string with the case of each character inverted", function(){
-    expect("rukee IS SOUL smashingly HANDsome!!!!".inverseCase()).toBe("RUKEE is soul SMASHINGLY handSOME!!!!")
-  })
+  it("should return the string with the case of each character inverted", function() {
+    expect("rukee IS SOUL smashingly HANDsome!!!!".inverseCase()).toBe(
+      "RUKEE is soul SMASHINGLY handSOME!!!!"
+    );
+  });
 
   it("should return 'string' as type ", function() {
     expect(typeof "some name".inverseCase()).toBe("string");
+  });
+});
+
+//alternatingCase
+describe("alternatingCase", function() {
+  it("should alternate the casing of the string", function() {
+    expect("Mr. Ben".alternatingCase()).toEqual("mR. bEN");
+  });
+
+  it("should alternate the casing of the string", function() {
+    expect("rukee IS SOUL smashingly HANDsome!!!!".alternatingCase()).toBe();
+  });
+
+  it("should return 'string' as type ", function() {
+    expect(typeof "some name".alternatingCase()).toBe("string");
   });
 });

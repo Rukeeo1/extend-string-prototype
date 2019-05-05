@@ -1,4 +1,8 @@
-const { toUpperCasing, strToLowerCase, invertCasing} = require("./helpers/helper");
+const {
+  toUpperCasing,
+  strToLowerCase,
+  invertCasing
+} = require("./helpers/helper");
 
 String.prototype.hasVowels = function() {
   let regex = /[aeiou]/gi;
@@ -32,6 +36,8 @@ String.prototype.wordCount = function() {
   return this.words().length;
 };
 
+//toCurrency ....... implementation comming soon.
+
 String.prototype.fromCurrency = function() {
   let regex = /,/g; //store the comma ',' pattern in a regexp
 
@@ -41,9 +47,13 @@ String.prototype.fromCurrency = function() {
   return Number(currencyWithoutCommas);
 };
 
-
-String.prototype.inverseCase = function(){
+String.prototype.inverseCase = function() {
   /**check helper.js for implementation details */
   return invertCasing(this);
-}
+};
+
+
+
+
+
 module.exports = String.prototype;
