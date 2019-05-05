@@ -129,10 +129,27 @@ describe("alternatingCase", function() {
   });
 
   it("should alternate the casing of the string", function() {
-    expect("rukee IS SOUL smashingly HANDsome!!!!".alternatingCase()).toBe( "rUkEe iS SoUl sMaShInGlY HaNdSoMe!!!!");
+    expect("rukee IS SOUL smashingly HANDsome!!!!".alternatingCase()).toBe(
+      "rUkEe iS SoUl sMaShInGlY HaNdSoMe!!!!"
+    );
   });
 
   it("should return 'string' as type ", function() {
     expect(typeof "some name".alternatingCase()).toBe("string");
+  });
+});
+
+//numberWords (typeof String):
+describe("numberWords", function() {
+  it("should return the given number in words", function() {
+    expect(String.prototype.numberWords(3244)).toEqual("Three Two Four Four");
+  });
+
+  it("should return the given number in words", function() {
+    expect(String.prototype.numberWords(325)).toBe("Three Two Five");
+  });
+
+  it("should return 'string' as type ", function() {
+    expect(typeof String.prototype.numberWords(7998)).toBe("string");
   });
 });

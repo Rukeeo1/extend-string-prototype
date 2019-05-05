@@ -53,12 +53,9 @@ String.prototype.inverseCase = function() {
   return invertCasing(this);
 };
 
-String.prototype.alternatingCase = function(){
-
+String.prototype.alternatingCase = function() {
+  /**check helper.js for implementation details */
   return alternateCasing(this);
-}
-
-
-
+};
 
 module.exports = String.prototype;
