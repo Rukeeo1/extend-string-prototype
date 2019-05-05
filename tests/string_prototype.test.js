@@ -96,11 +96,11 @@ describe("wordCount", function() {
 //toCurrency
 describe("toCurrency", function() {
   it("should return the number formatted as a currency", function() {
-    expect(String.toCurrency(11111.11)).toEqual();
+    expect(String.toCurrency(11111.11)).toEqual("11,111.11");
   });
 
   it("should return the number formatted as a currency", function() {
-    expect(String.toCurrency(1000)).toEqual();
+    expect(String.toCurrency(1000)).toEqual("1,000.00");
   });
 
   it("should return 'number' as type ", function() {
