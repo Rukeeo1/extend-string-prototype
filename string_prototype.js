@@ -3,7 +3,8 @@ const {
   strToLowerCase,
   invertCasing,
   alternateCasing,
-  convertNumbersToWords
+  convertNumbersToWords,
+  strNumToWord
 } = require("./helpers/helper");
 
 String.prototype.hasVowels = function() {
@@ -58,14 +59,13 @@ String.prototype.alternatingCase = function() {
   return alternateCasing(this);
 };
 
-
 String.prototype.numberWords = function(number) {
   return convertNumbersToWords(number);
 };
 
 /**I wasn't sure of the exact way in which The instructor wanted the function to be implemented, so i added another implementation.*/
-String.prototype.stringNumbersToWords = function(){
-  
-}
+String.prototype.stringNumbersToWords = function() {
+  return strNumToWord(this);
+};
 
 module.exports = String.prototype;

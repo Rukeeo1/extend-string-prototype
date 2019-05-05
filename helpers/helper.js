@@ -82,10 +82,22 @@ function convertNumbersToWords(number) {
   return newString.replace(regex, "");
 }
 
+function strNumToWord(str) {
+  let newString = "";
+  let regex = /\s/;
+
+  for (var i = 0; i < str.length; i++) {
+    //convert the numberTostring member at that index to a number
+    newString += " " + wordsArray[str[i]];
+  }
+  return newString.replace(regex, "");
+}
+
 module.exports = {
   toUpperCasing,
   strToLowerCase,
   invertCasing,
   alternateCasing,
-  convertNumbersToWords
+  convertNumbersToWords,
+  strNumToWord
 };
