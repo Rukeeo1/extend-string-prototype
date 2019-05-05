@@ -89,6 +89,6 @@ describe("wordCount", function() {
   });
 
   it("should return 'number' as type ", function() {
-    expect(typeof "hello world?".wordCount()).toBe("object");
+    expect(typeof "hello world?".wordCount()).toBe("number");
   });
 });
