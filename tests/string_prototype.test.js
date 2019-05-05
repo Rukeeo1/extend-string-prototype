@@ -67,11 +67,10 @@ describe("isQuestion", function() {
 //words:
 describe("words", function() {
   it("should return the list of words in the string", function() {
-    expect("Would you be going out today?".words()).toBe();
+    expect("Would you be going out today?".words()).toEqual(["Would", "you", "be", "going", "out", "today"]);
   });
 
-
-  it("should return 'objedt' as type ", function() {
+  it("should return 'object' as type ", function() {
     expect(typeof "hello world?".words()).toBe("object");
   });
 });

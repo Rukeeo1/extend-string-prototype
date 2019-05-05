@@ -23,4 +23,9 @@ String.prototype.isQuestion = function() {
   return regex.test(this);
 };
 
+String.prototype.words = function() {
+  let regex = /[a-zA-Z]+/g;
+  return this.match(regex);
+};
+
 module.exports = String.prototype;
