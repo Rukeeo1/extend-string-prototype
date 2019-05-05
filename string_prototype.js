@@ -69,5 +69,10 @@ String.prototype.stringNumbersToWords = function() {
 };
 
 //isDigit (typeof Boolean)
+String.prototype.isDigit = function() {
+  let regex = /^\d$/g;
+  //   console.log(this.match(regex));
+  return regex.test(this);
+};
 
 module.exports = String.prototype;

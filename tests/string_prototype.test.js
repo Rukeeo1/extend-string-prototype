@@ -182,8 +182,10 @@ describe("isDigit", function() {
   });
 
   it("should return 'string' as type ", function() {
-    expect(
-      typeof "should return false if words are passed in".stringNumbersToWords()
-    ).toBe(false);
+    expect("should return false if words are passed in".isDigit()).toBe(false);
   });
+
+  it("should return 'boolean' as it's type", function(){
+    expect(typeof '3'.isDigit()).toBe('boolean')
+  })
 });
