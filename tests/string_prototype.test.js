@@ -1,5 +1,4 @@
 const String = require("../string_prototype");
-console.log(String);
 
 describe("hasVowels", function() {
   it("should return true if the string contains a vowel", function() {
@@ -15,6 +14,7 @@ describe("hasVowels", function() {
   });
 });
 
+//toUpper
 describe("toUpper", function() {
   it("should return the string converted to upper case", function() {
     expect("this string should be returned as uppercase".toUpper()).toBe(
@@ -39,9 +39,14 @@ describe("toLower", function() {
   });
 });
 
+//ucFirst
 describe("ucFirst", function() {
   it("should convert the first letter of the string to uppercase", function() {
     expect("rukee".ucFirst()).toBe("Rukee");
+  });
+
+  it("should convert the first letter of the string to uppercase", function() {
+    expect("1rukee".ucFirst()).toBe("1rukee");
   });
 
   it("should return 'string' as type ", function() {
@@ -76,6 +81,16 @@ describe("words", function() {
       "today"
     ]);
   });
+  it("should return the list of words in the string", function() {
+    expect("Would you be going 367 38923 out today?".words()).toEqual([
+      "Would",
+      "you",
+      "be",
+      "going",
+      "out",
+      "today"
+    ]);
+  });
 
   it("should return 'object' as type ", function() {
     expect(typeof "hello world?".words()).toBe("object");
@@ -102,12 +117,14 @@ describe("toCurrency", function() {
   it("should return the number formatted as a currency", function() {
     expect(String.toCurrency(1000)).toEqual("1,000.00");
   });
-
+  it("should return the number formatted as a currency", function() {
+    expect(String.toCurrency(1000000.11)).toEqual("1,000,000.11");
+  });
   it("should return 'number' as type ", function() {
     expect(typeof String.toCurrency(11111.11)).toBe("string");
   });
 });
-//************** */
+
 //fromCurrency
 describe("fromCurrency", function() {
   it("should return a number from the currency without the comma", function() {
@@ -143,6 +160,10 @@ describe("alternatingCase", function() {
     expect("Mr. Ben".alternatingCase()).toEqual("mR. bEn");
   });
 
+  //oNoMaToPoEiA.
+  it("should alternate the casing of the string", function() {
+    expect("oNoMaToPoEiA".alternatingCase()).toEqual("oNoMaToPoEiA");
+  });
   it("should alternate the casing of the string", function() {
     expect("rukee IS SOUL smashingly HANDsome!!!!".alternatingCase()).toBe(
       "rUkEe iS SoUl sMaShInGlY HaNdSoMe!!!!"

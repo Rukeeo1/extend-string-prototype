@@ -22,7 +22,7 @@ String.prototype.toLower = function() {
 };
 
 String.prototype.ucFirst = function() {
-  return this.charAt(0).toUpperCase() + this.substring(1);
+  return this.charAt(0).toUpper() + this.substring(1);
 };
 
 String.prototype.isQuestion = function() {
