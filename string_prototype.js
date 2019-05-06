@@ -79,4 +79,11 @@ String.prototype.toCurrency = function(number) {
   return number.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,");
 };
 
+String.prototype.ucFirstAgain = function(){
+  //split string
+  let stringToArray = this.split(' ');
+  return stringToArray.map((item) => item.ucFirst()).join(' ');
+}
+
+console.log('rukee ojigbo'.ucFirstAgain());
 module.exports = String.prototype;
