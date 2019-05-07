@@ -104,12 +104,17 @@ describe("wordCount", function() {
   });
 
   it("should return 'number' as type ", function() {
+    expect("Bash ".wordCount()).toBe(1);
+  });
+
+  it("should return 'number' as type ", function() {
     expect(typeof "hello world?".wordCount()).toBe("number");
   });
 });
 
 //toCurrency
 describe("toCurrency", function() {
+  
   it("should return the number formatted as a currency", function() {
     expect(String.toCurrency(11111.11)).toEqual("11,111.11");
   });
