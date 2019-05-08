@@ -91,12 +91,16 @@ function convertNumbersToWords(number) {
   return newString.replace(regex, "");
 }
 
+/* the function below does the exact samething as the convertNumbersToWords function. However 
+while the convertNumbersToWords function takes in a number. This one takes in a string.
+*/
 function strNumToWord(str) {
   let newString = "";
   let regex = /\s/;
 
   for (var i = 0; i < str.length; i++) {
-    //pass in the the number index into the array to return the corresponding word format.
+    //loop through the string. Pass each number into the wordsArray. it returns the 'word' equivalent
+    //add it to the newString.
     newString += " " + wordsArray[str[i]];
   }
   return newString.replace(regex, "");
