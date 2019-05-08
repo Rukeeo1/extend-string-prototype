@@ -81,8 +81,12 @@ String.prototype.toCurrency = function(number) {
 
 
 String.prototype.ucFirstAgain = function(){
-  //split string
+  //convert string to array with the split method.
   let stringToArray = this.split(' ');
+/* loop through string with the 'map' method
+*call the ucFirst method on each item. This converts the first letter of Each word to uppperCase
+* The 'map' method returns an array... use the 'join' method to convert it back to string.
+*/
   return stringToArray.map((item) => item.ucFirst()).join(' ');
 }
 
